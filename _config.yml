@@ -140,10 +140,10 @@ lsi: false # produce an index for related posts
 
 # Pagination
 pagination:
-  enabled: true
+  enabled: falsa
 
 related_blog_posts:
-  enabled: true
+  enabled: falsa
   max_related: 5
 
 # Giscus comments (RECOMMENDED)
@@ -201,12 +201,12 @@ collections:
 
 announcements:
   enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  scrollable: false # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  scrollable: false # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 
 # -----------------------------------------------------------------------------
@@ -229,6 +229,10 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
+  - blog.md
+  - dropdowm.md
+  - news.md
+  - teaching.md
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
